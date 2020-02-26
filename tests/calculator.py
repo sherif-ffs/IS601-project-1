@@ -24,3 +24,9 @@ class Calculator:
         cls.answer /= num
         return cls.answer
     
+    @classmethod
+    def square(cls, num):
+        cls.answer = num**2
+        return cls.answer
+
+    
