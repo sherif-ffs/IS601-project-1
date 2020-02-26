@@ -19,3 +19,8 @@ class Calculator:
         cls.answer *= num
         return cls.answer
     
+    @classmethod
+    def divide(cls, num):
+        cls.answer /= num
+        return cls.answer
+    
