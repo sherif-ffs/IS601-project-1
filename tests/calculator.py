@@ -29,4 +29,13 @@ class Calculator:
         cls.answer = num**2
         return cls.answer
 
+    @classmethod
+    def squareRoot(cls, num):
+        cls.answer = num**.5
+        return cls.answer
+        
+    @classmethod
+    def getAnswer(cls):
+        return cls.answer
+
     
