@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# encoding=utf8
+
 class Calculator:
     answer = 0 
 
@@ -14,7 +17,7 @@ class Calculator:
         cls.answer -= num
         return cls.answer
     
-    classmethod
+    @classmethod
     def multiply(cls, num):
         cls.answer *= num
         return cls.answer
