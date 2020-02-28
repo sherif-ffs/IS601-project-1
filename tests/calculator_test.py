@@ -24,3 +24,26 @@ class test_calculator(unittest.TestCase):
         calc = Calculator()
         assert calc.subtract(2) != 5
 
+    def test_calc_multiply(self):
+        calc = Calculator()
+        assert calc.multiply(2) == 0
+    
+    def test_calc_multiply_fail(self):
+        calc = Calculator()
+        assert calc.multiply(2) != 0
+
+    def test_calc_divide(self):
+        calc = Calculator()
+        assert calc.divide(2) == 0
+
+    def test_calc_divide_fail(self):
+        calc = Calculator()
+        assert calc.divide(2) != 0
+
+    def test_calc_square(self):
+        calc = Calculator()
+        assert calc.square(5) == 25
+    
+    def test_calc_square(self):
+        calc = Calculator()
+        assert calc.square(5) != 5
