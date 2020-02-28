@@ -1,5 +1,4 @@
 from calculator import Calculator
-import pytest 
 import unittest
 
 class test_calculator(unittest.TestCase):
@@ -47,3 +46,11 @@ class test_calculator(unittest.TestCase):
     def test_calc_square(self):
         calc = Calculator()
         assert calc.square(5) != 5
+
+    def test_calc_squareRoot(self):
+        calc = Calculator()
+        assert calc.squareRoot(16) == 4
+    
+    def test_calc_squareRoot_fail(self):
+        calc = Calculator()
+        assert calc.squareRoot(16) != 2
