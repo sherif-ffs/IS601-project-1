@@ -16,7 +16,7 @@ class Calculator:
     def subtract(cls, num):
         cls.answer -= num
         return cls.answer
-    
+
     @classmethod
     def multiply(cls, num):
         cls.answer *= num
