@@ -29,15 +29,15 @@ class test_calculator(unittest.TestCase):
     
     def test_calc_multiply_fail(self):
         calc = Calculator()
-        assert calc.multiply(2) != 0
+        assert calc.multiply(0) == 0
 
     def test_calc_divide(self):
         calc = Calculator()
-        assert calc.divide(2) == 0
+        assert calc.divide(9) == 0
 
     def test_calc_divide_fail(self):
         calc = Calculator()
-        assert calc.divide(2) != 0
+        assert calc.divide(4) == 0
 
     def test_calc_square(self):
         calc = Calculator()
